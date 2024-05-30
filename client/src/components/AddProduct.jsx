@@ -24,7 +24,7 @@ function AddProduct() {
     const handleSubmit = (e)=>{
         e.preventDefault();
 
-        const apiUrl = 'https://mystoreapp-j5tf.onrender.com/products/add-product';
+        const apiUrl = 'http://localhost:5000/products/add-product';
 
         fetch(apiUrl, {
             method: 'POST',

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 const ProductCard = ({ product, cart, addToCart, adjustQuantity }) => {
     const [error, setError] = useState('');
-    const imagePath = `https://mystoreapp-j5tf.onrender.com/images/${product.image}`;
+    const imagePath = `http://localhost:5000/images/${product.image}`;
     const cartItem = cart.find(item => item._id === product._id);
 
 

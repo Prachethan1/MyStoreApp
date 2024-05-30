@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGO_URI)
         console.log(`${error}`);
     })
 
-    app.use('/products',productRoutes)
+    app.use(productRoutes)
 
 
 app.listen(PORT, ()=>{

@@ -31,7 +31,7 @@ const ShoppingCart = ({ cart, products, removeFromCart, adjustQuantity }) => {
                     {cart.map((item, index) => (
                         <div key={index} style={{ borderBottom: '1px solid #ccc', marginBottom: '10px', paddingBottom: '10px' }}>
                             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '5px' }}>
-                                <img src={`https://mystoreapp-j5tf.onrender.com/images/${item.image}`} alt={item.name} style={{ width: '50px', marginRight: '10px' }} />
+                                <img src={`http://localhost:5000/images/${item.image}`} alt={item.name} style={{ width: '50px', marginRight: '10px' }} />
                                 <div>
                                     <p><strong>{item.name}</strong></p>
                                     <p>Price: Rs.{item.price}</p>

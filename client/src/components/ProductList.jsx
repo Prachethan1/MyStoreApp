@@ -20,7 +20,7 @@ const ProductList = ({ addToCart, cart, adjustQuantity }) => {
 
 
     useEffect(() => {
-        fetch('https://mystoreapp-j5tf.onrender.com/products/allProducts')
+        fetch('http://localhost:5000/products/allProducts')
             .then((response) => response.json())
             .then((data) => {setProducts(data)
                 setFilteredProducts(data)
